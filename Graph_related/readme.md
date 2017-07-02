@@ -1,34 +1,35 @@
-´ËÑ¹Ëõ°üÄÚ°üº¬ÒÔÏÂ³ÌÐò£º
-utils.py:¼ÇÂ¼³£ÓÃ²Ù×÷
-random_graph.py:Éú³ÉÁªÍ¨µÄÎÞÏòÍ¼(Ò²¿É½«Éú³É±ß²¿·ÖÉÔ×÷ÐÞ¸Ä±äÎªÉú³ÉÓÐÏòÍ¼)
-Dijkstra.py:DijkstraËã·¨ÊµÏÖ
-Max_flow.py: ×î´óÁ÷Ëã·¨ÊµÏÖ
-Bellan_ford.py: Bellan_fordËã·¨ÊµÏÖ,ÓÃÓÚ¼ÆËã´ø¸º±ßµÄµ¥Ô´×î¶ÌÂ·¾¶(¾àÀë)
-max_flow_min_cost.py:×îÐ¡·ÑÓÃµÄ×î´óÁ÷£¬ÆäÖÐÓÃµ½Max_flow.pyÀ´¼ÆËã×î´óÁ÷,ÓÃµ½Bellman_fordËã·¨À´Çó´ÓÔ´½Úµãµ½Ä¿±ê½ÚµãµÄ×î¶ÌÂ·¾¶
-ÊäÈë¸ñÊ½£º
-DijkstraÊäÈë¸ñÊ½Îª\t·Ö¸ôµÄÈýÔª×é,¼´src	aim	weightÀ´´ú±íÍ¼ÖÐµÄ±ß
-Max_flowÊäÈë¸ñÊ½Îª\t·Ö¸ôµÄÈýÔª×é,¼´src	aim	capacityÀ´´ú±íÍ¼ÖÐµÄ±ß
-max_flow_min_costÊäÈë¸ñÊ½Îª\t·Ö¸ôµÄËÄÔª×é,¼´src	aim	capacity costÀ´´ú±íÍ¼ÖÐµÄ±ß
-max_flowºÍmax_flow_min_costÖ÷Òª´¦Àí²¿·Ö¾ù¿ÉÓÃÈçÏÂÎ±´úÂë±íÊ¾:
+æ­¤åŽ‹ç¼©åŒ…å†…åŒ…å«ä»¥ä¸‹ç¨‹åºï¼š
+utils.py:è®°å½•å¸¸ç”¨æ“ä½œ
+random_graph.py:ç”Ÿæˆè”é€šçš„æ— å‘å›¾(ä¹Ÿå¯å°†ç”Ÿæˆè¾¹éƒ¨åˆ†ç¨ä½œä¿®æ”¹å˜ä¸ºç”Ÿæˆæœ‰å‘å›¾)
+Dijkstra.py:Dijkstraç®—æ³•å®žçŽ°
+Max_flow.py: æœ€å¤§æµç®—æ³•å®žçŽ°
+Bellan_ford.py: Bellan_fordç®—æ³•å®žçŽ°,ç”¨äºŽè®¡ç®—å¸¦è´Ÿè¾¹çš„å•æºæœ€çŸ­è·¯å¾„(è·ç¦»)
+max_flow_min_cost.py:æœ€å°è´¹ç”¨çš„æœ€å¤§æµï¼Œå…¶ä¸­ç”¨åˆ°Max_flow.pyæ¥è®¡ç®—æœ€å¤§æµ,ç”¨åˆ°Bellman_fordç®—æ³•æ¥æ±‚ä»ŽæºèŠ‚ç‚¹åˆ°ç›®æ ‡èŠ‚ç‚¹çš„æœ€çŸ­è·¯å¾„
+è¾“å…¥æ ¼å¼ï¼š
+Dijkstraè¾“å…¥æ ¼å¼ä¸º\tåˆ†éš”çš„ä¸‰å…ƒç»„,å³src	aim	weightæ¥ä»£è¡¨å›¾ä¸­çš„è¾¹
+Max_flowè¾“å…¥æ ¼å¼ä¸º\tåˆ†éš”çš„ä¸‰å…ƒç»„,å³src	aim	capacityæ¥ä»£è¡¨å›¾ä¸­çš„è¾¹
+max_flow_min_costè¾“å…¥æ ¼å¼ä¸º\tåˆ†éš”çš„å››å…ƒç»„,å³src	aim	capacity costæ¥ä»£è¡¨å›¾ä¸­çš„è¾¹
+max_flowå’Œmax_flow_min_costä¸»è¦å¤„ç†éƒ¨åˆ†å‡å¯ç”¨å¦‚ä¸‹ä¼ªä»£ç è¡¨ç¤º:
 	while true:
 		if exist_augment_path:
 			path = find_augment_path
 			update(path)
 		else:
 			break
-ÔËÐÐÃüÁî:
-´Ë´ó×÷ÒµµÚÒ»²¿·ÖÔËÐÐÈçÏÂ£º
+			
+è¿è¡Œå‘½ä»¤:
+æ­¤å¤§ä½œä¸šç¬¬ä¸€éƒ¨åˆ†è¿è¡Œå¦‚ä¸‹ï¼š
 python random_graph.py size output_graph
 python Dijkstra.py output_graph res_output_graph
-µÚ¶þ²¿·Ö×î´óÁ÷ÔËÐÐÈçÏÂ£º
+ç¬¬äºŒéƒ¨åˆ†æœ€å¤§æµè¿è¡Œå¦‚ä¸‹ï¼š
 python Max_flow.py graph_file res_output
 python max_flow_min_cost.py graph_file res_output
 
-ÔËÐÐÊµÀý:
+è¿è¡Œå®žä¾‹:
 python random_graph.py 30 C_graph.txt
 python Dijkstra.py C_graph.txt res_MST.txt
-´Ë´¦µÄres_MST.txt½ö°üº¬×îÐ¡Éú³ÉÊ÷£¬»ñµÃ×î¶ÌÂ·¾¶µÄ²¿·ÖÎªDijkstraµÄfind_wayº¯Êý»áÔÚÔËÐÐÊ±´ò³ö½á¹û£¬µ«²»´æµ½ÎÄ¼þ
+æ­¤å¤„çš„res_MST.txtä»…åŒ…å«æœ€å°ç”Ÿæˆæ ‘ï¼ŒèŽ·å¾—æœ€çŸ­è·¯å¾„çš„éƒ¨åˆ†ä¸ºDijkstraçš„find_wayå‡½æ•°ä¼šåœ¨è¿è¡Œæ—¶æ‰“å‡ºç»“æžœï¼Œä½†ä¸å­˜åˆ°æ–‡ä»¶
 python Max_flow.py test_book.txt res_book
 python max_flow_min_cost.py test_book_2.txt res_book_2
-Æä½á¹ûÎÄ¼þ¾ùÎªµ±Ç°µÄ¸÷±ßÁ÷µÄÇé¿ö,ÖÁÓÚ×î´óÁ÷µÄÁ¿ºÍ×îÐ¡·ÑÓÃÔò»áÔÚÆÁÄ»´ò³ö¡£ÕâÁ½¸öÔËÐÐ³ÌÐò¾ùÊÇÊ¹ÓÃÊéÖÐµÄÀý×Ó
-ÎÒ½«Æä·Ö±ðÃüÃûÎªtest_book.txtºÍtest_book_2.txt
+å…¶ç»“æžœæ–‡ä»¶å‡ä¸ºå½“å‰çš„å„è¾¹æµçš„æƒ…å†µ,è‡³äºŽæœ€å¤§æµçš„é‡å’Œæœ€å°è´¹ç”¨åˆ™ä¼šåœ¨å±å¹•æ‰“å‡ºã€‚è¿™ä¸¤ä¸ªè¿è¡Œç¨‹åºå‡æ˜¯ä½¿ç”¨ä¹¦ä¸­çš„ä¾‹å­
+æˆ‘å°†å…¶åˆ†åˆ«å‘½åä¸ºtest_book.txtå’Œtest_book_2.txt
