@@ -1,0 +1,1 @@
+python newtown.py new2.txt res_newtown 0.01
