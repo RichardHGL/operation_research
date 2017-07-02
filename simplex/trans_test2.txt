@@ -1,0 +1,4 @@
+maxz=2x1+x2
+5x2+relax_0=15
+6x1+2x2+relax_1=24
+x1+x2+relax_2=5
